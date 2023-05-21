@@ -12,22 +12,21 @@
 
 <script>
 import { ref } from 'vue'
-import axios from 'axios'
+import {getAllTasks} from '../services/TodoService'
 import TodoItemComponent from './TodoItem.vue'
 export default {
   name: 'Todos-component',
   components: { TodoItemComponent},
   setup() {
     const todos = ref([])
-    const getAllTasks = async () => {
+    const fetchTasks = async () => {
       try {
-        const res = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
-        todos.value = res.data
+        todos.value = await getAllTasks();
       } catch (err) {
         console.log(err)
       }
     }
-    getAllTasks()
+    fetchTasks()
 
     return { todoList: todos }
   }
