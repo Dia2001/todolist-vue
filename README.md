@@ -24,6 +24,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Infor
 API: https://jsonplaceholder.typicode.com/
+
+
+
 Cài đặt Vue CLI
 npm install -g @vue/cli
 Tạo project Vue.js
