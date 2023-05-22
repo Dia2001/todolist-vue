@@ -13,6 +13,7 @@ export default {
   props: ['todoProps'],
   setup(props, context) {
     const taskId = ref('my-id')
+    console.log("Value: "+taskId.value)
     const markItemCompleted = (event) => {
       console.log('event', event.target)
       // console.log('props.todoProps', props.todoProps)
