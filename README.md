@@ -33,3 +33,8 @@ npm install -g @vue/cli
 Tạo project Vue.js
 vue create tên_dự_án
 ```
+```
+cd tên_dự_án
+Tiếp theo, chạy lệnh sau để cài đặt TypeScript:
+vue add @vue/typescript
+```
